@@ -39,9 +39,10 @@ function App() {
 
 	return (
 		<div className='App'>
+			<h1>Where is the International Space Station</h1>
 			<p>
-				Last location recorded at:{' '}
-				{dayjs(currentLocation.timestamp).format('h:mm A')}{' '}
+				Latest location recorded{' '}
+				{dayjs(currentLocation.timestamp).format('MMMM D, h:mm A')}{' '}
 				{dayjs().isBetween(
 					`${dayjs().format('YYYY')}-3-12`,
 					`${dayjs().format('YYYY')}-11-5`,
